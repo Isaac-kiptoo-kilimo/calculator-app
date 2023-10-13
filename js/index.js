@@ -1,3 +1,7 @@
+const output=document.querySelector('.output')
+
+
+
 let input = '';
 let new_result = '';
 
