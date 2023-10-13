@@ -1,7 +1,12 @@
-/* css
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .container{
     border: 1px solid gray;
-    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    
     border-radius: 20px;
     position: absolute;
     top: 55%;
@@ -9,9 +14,18 @@
     transform: translate(-50%, -50%);
     width: 450px;
     height: 400px;
+    text-align: center;
+    padding: 50px;
 }
 
-.keys{
+.main{
+    width: 60%;
+    margin-left: 50px;
+ 
+}
+
+
+.btns{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
@@ -19,7 +33,8 @@
     margin: auto;
 
 }
-.button{
+
+.btn{
     height: 60px;
     padding: 5px;
     background-color: #fff;
@@ -28,42 +43,45 @@
     background-color: transparent;
     font-size: 2rem;
     color: #333;
-    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.04));
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
-    text-shadow: 0 1px rgba(255,255,255,.4);
+
 }
+
+
 .operator {
     color: #fff;
-    background-color: #eebb24;
+    background-color: aquamarine;
+    font-size: 20px;
+    font-weight: 700;
+
 }
-.clear {
+
+
+.delete {
     background-color: #f0595f;
-    border-color: #b0353a;
+    border: none;
     color: #fff;
     width: 80px;
-    height: 30px;  
+    height: 30px;
+    padding: 20px;  
+    margin-bottom: -20px;
 }
-.clear:hover{
-    background-color: green;
-}
+
 .equal-sign {
-    background-color: #25a8e0;
-    border-color: #25a8e0;
+    background-color: #dfe0e1;
+    border: none;
     color: #fff;
 }
-.equal-sign:hover {
-    background-color: #4e9ed4;
-}
-.screen{
-    background-color:rgb(171, 219, 231);
-    justify-content: left;
+
+
+.output{
+    background-color:rgb(160, 161, 161);
+    
     color: black;
     font-size: medium;
     width: 50%;
     height: 30%;
     cursor: default;
-    padding: 10px; 
-    padding-left: 40%;
+    padding: 10px 15px; 
     margin: auto;
     margin-bottom: 10px;
-} */
+}

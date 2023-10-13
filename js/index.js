@@ -6,8 +6,8 @@ function mountOnInput(value) {
     if (value === '=') {
         try {
            new_result = eval(input);
-        } catch (error) {
-            new_result = 'Error';
+        } catch (invalid) {
+            new_result = 'invalid';
         }
         document.getElementById('result').value = new_result;
         input =new_result;

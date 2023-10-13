@@ -11,28 +11,33 @@
     
     <div class="container">
         <h1>Calculator</h1>
+        <main class="main">
+            
   
-        <input type="text" id="result" class="screen">
-        <input type="button" value="C" onclick="deleteScreen()" class="clear">
+        <div class="header">
+            <input type="text" id="result" class="output">
+        <input type="button" value="C" onclick="deleteScreen()" class="delete">
+        </div>
 
         <div class="btns">
             <input type="button" value="7" class="btn" onclick="mountOnInput('7')">
             <input type="button" value="8" class="btn" onclick="mountOnInput('8')">
             <input type="button" value="9" class="btn" onclick="mountOnInput('9')">
             <input type="button" value="/" class="operator" onclick="mountOnInput('/')">
-            <input type="button" value="4" class="button" onclick="mountOnInput('4')">
-            <input type="button" value="5" class="button" onclick="mountOnInput('5')">
-            <input type="button" value="6" class="button" onclick="mountOnInput('6')">
-            <input type="button" value="" class="operator" onclick="mountOnInput('')">
-            <input type="button" value="1" class="button" onclick="mountOnInput('1')">
-            <input type="button" value="2" class="button" onclick="mountOnInput('2')">
-            <input type="button" value="3" class="button" onclick="mountOnInput('3')">
+            <input type="button" value="4" class="btn" onclick="mountOnInput('4')">
+            <input type="button" value="5" class="btn" onclick="mountOnInput('5')">
+            <input type="button" value="6" class="btn" onclick="mountOnInput('6')">
+            <input type="button" value="*" class="operator" onclick="mountOnInput('*')">
+            <input type="button" value="1" class="btn" onclick="mountOnInput('1')">
+            <input type="button" value="2" class="btn" onclick="mountOnInput('2')">
+            <input type="button" value="3" class="btn" onclick="mountOnInput('3')">
             <input type="button" value="-" class="operator" onclick="mountOnInput('-')">
-            <input type="button" value="0" class="button" onclick="mountOnInput('0')">
-            <input type="button" value="." class="button" onclick="display('.')">
-            <input type="button" value="=" class="button equal-sign" onclick="mountOnInput('=')">
+            <input type="button" value="0" class="btn" onclick="mountOnInput('0')">
+            <input type="button" value="." class="btn" onclick="mountOnInput('.')">
+            <input type="button" value="=" class="btn equal-sign" onclick="mountOnInput('=')">
             <input type="button" value="+" class="operator" onclick="mountOnInput('+')">
         </div>
+        </main>
     </div>
     <script src="js/index.js"></script>
 </body>
