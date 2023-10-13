@@ -27,6 +27,7 @@
 .header{
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 .btns{
     display: grid;
@@ -61,11 +62,14 @@
 
 .delete {
     background-color: #f0595f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     color: #fff;
     width: 80px;
-    height: 30px;
-    padding: 20px;  
+    /* height: 30px; */
+    padding: 15px;  
     margin-top: -10px;
 }
 
