@@ -25,6 +25,7 @@ function mountOnInput(value) {
         input += value;
         document.getElementById('result').value = input;
     }
+   
 }
 
 function deleteScreen() {

@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Calculator</h1>
-        <main class="main">
-            
-  
+      <h1>Calculator</h1>
+      <main class="main">
         <div class="header">
-            <input type="text" id="result" class="output">
-        <input type="button" value="C" onclick="deleteScreen()" class="delete">
+          <input type="text" id="result" class="output" />
+          <input
+            type="button"
+            value="C"
+            onclick="deleteScreen()"
+            class="delete"
+          />
         </div>
 
         <div class="btns">
-            <input type="button" value="7" class="btn" onclick="mountOnInput('7')">
-            <input type="button" value="8" class="btn" onclick="mountOnInput('8')">
-            <input type="button" value="9" class="btn" onclick="mountOnInput('9')">
-            <input type="button" value="/" class="operator" onclick="mountOnInput('/')">
-            <input type="button" value="4" class="btn" onclick="mountOnInput('4')">
-            <input type="button" value="5" class="btn" onclick="mountOnInput('5')">
-            <input type="button" value="6" class="btn" onclick="mountOnInput('6')">
-            <input type="button" value="*" class="operator" onclick="mountOnInput('*')">
-            <input type="button" value="1" class="btn" onclick="mountOnInput('1')">
-            <input type="button" value="2" class="btn" onclick="mountOnInput('2')">
-            <input type="button" value="3" class="btn" onclick="mountOnInput('3')">
-            <input type="button" value="-" class="operator" onclick="mountOnInput('-')">
-            <input type="button" value="0" class="btn" onclick="mountOnInput('0')">
-            <input type="button" value="." class="btn" onclick="mountOnInput('.')">
-            <input type="button" value="=" class="btn equal-sign" onclick="mountOnInput('=')">
-            <input type="button" value="+" class="operator" onclick="mountOnInput('+')">
+          <button class="btn" onclick="mountOnInput('7')">7</button>
+          <button class="btn" onclick="mountOnInput('8')">8</button>
+          <button class="btn" onclick="mountOnInput('9')">9</button>
+          <button class="operator" onclick="mountOnInput('/')">/</button>
+          <button class="btn" onclick="mountOnInput('4')">4</button>
+          <button class="btn" onclick="mountOnInput('5')">5</button>
+          <button class="btn" onclick="mountOnInput('6')">6</button>
+          <button class="operator" onclick="mountOnInput('*')">*</button>
+          <button class="btn" onclick="mountOnInput('1')">1</button>
+          <button class="btn" onclick="mountOnInput('2')">2</button>
+          <button class="btn" onclick="mountOnInput('3')">3</button>
+          <button class="operator" onclick="mountOnInput('-')">-</button>
+          <button class="btn" onclick="mountOnInput('0')">0</button>
+          <button class="btn" onclick="mountOnInput('.')">.</button>
+          <button class="btn equal-sign" onclick="mountOnInput('=')">=</button>
+          <button class="operator" onclick="mountOnInput('+')">+</button>
         </div>
-        </main>
+      </main>
     </div>
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
