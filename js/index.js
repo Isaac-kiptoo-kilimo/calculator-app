@@ -6,6 +6,24 @@ let input = '';
 let new_result = '';
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.btn, .operator');
+    buttons.forEach( (button)=> {
+      button.addEventListener('click', function () {
+        const value = this.dataset.value;
+        mountOnInput(value);
+      });
+    });
+  
+    delete_btn=document.querySelector('.delete')
+    delete_btn.addEventListener('click', ()=>{
+        input = '';
+        new_result = '';
+        document.getElementById('result').value = '';
+    });
+  });
+  
+
 function mountOnInput(value) {
     if (value === '=') {
         try {
@@ -28,9 +46,6 @@ function mountOnInput(value) {
    
 }
 
-function deleteScreen() {
-    input = '';
-    new_result = '';
-    document.getElementById('result').value = '';
-}
+
+
 
